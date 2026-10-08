@@ -1,0 +1,3015 @@
+{
+  "run_id": "run-20261007-174540-26ec",
+  "generated_at": "2026-10-07T18:02:20+00:00",
+  "summary": {
+    "run_id": "run-20261007-174540-26ec",
+    "leads_kept": 18,
+    "patients_kept": 16,
+    "delivered": 34,
+    "failed": 2,
+    "provider": "ollama/llama3.2",
+    "contract_probe": "Bad payload was rejected with 422. Local check saw 11 problems. That rejection is the contract test, not a crashed record.",
+    "status": "finished"
+  },
+  "records": [
+    {
+      "input": {
+        "id": "lead:L001",
+        "source": "linkedin",
+        "name": "Rebecca Hart",
+        "contact": {
+          "location": "Austin TX",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Rebecca Hart is Practice Manager at Northgate Family Clinic (Healthcare, size 11-50, Austin TX). Headline: Practice Manager helping small clinics run smoother ops. Recent activity: Liked a post about AI receptionists for medical clinics. How they got on the list: Sent a connection request after webinar on clinic automation.",
+          "details": {
+            "job_title": "Practice Manager",
+            "company": "Northgate Family Clinic",
+            "industry": "Healthcare",
+            "company_size": "11-50",
+            "headline": "Practice Manager helping small clinics run smoother ops",
+            "recent_activity": "Liked a post about AI receptionists for medical clinics",
+            "connection_note": "Sent a connection request after webinar on clinic automation"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 76,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from Practice Manager",
+            "warmth engaged",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 76. industry Healthcare fits clinic work; title weight from Practice Manager; warmth engaged; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 76. Pre-check was 76. Blended score 76 maps to warm. Intent: Expressed interest. Rebecca Hart, Practice Manager at Northgate Family Clinic, has shown interest in AI receptionists for medical clinics by liking a post about the topic. Her engagement with the content suggests she is open to exploring solutions that can improve clinic operations. Additionally, she sent a connection request after a webinar on clinic automation, indicating a level of engagement and potential interest in our product, Deskline."
+        },
+        {
+          "step": "action",
+          "detail": "Warm, not a live hand-raise. Queue sales_nurture, tone conversational, channel linkedin."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Your work in clinic automation caught my attention"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_nurture via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 1"
+        }
+      ],
+      "qualification": {
+        "label": "warm",
+        "score": 76,
+        "intent": "Expressed interest",
+        "rationale": "Rebecca Hart, Practice Manager at Northgate Family Clinic, has shown interest in AI receptionists for medical clinics by liking a post about the topic. Her engagement with the content suggests she is open to exploring solutions that can improve clinic operations. Additionally, she sent a connection request after a webinar on clinic automation, indicating a level of engagement and potential interest in our product, Deskline."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "conversational",
+        "escalate": false,
+        "queue": "sales_nurture"
+      },
+      "message": {
+        "subject": "Your work in clinic automation caught my attention",
+        "body": "I came across your profile and noticed you're the Practice Manager at Northgate Family Clinic. Your experience helping small clinics run smoother operations aligns with the work of our team at Deskline. We're developing AI receptionists to help clinics like yours streamline their operations and improve patient experiences. Would you be open to exploring how our product could support your practice?"
+      },
+      "rationale": "Rebecca Hart, Practice Manager at Northgate Family Clinic, has shown interest in AI receptionists for medical clinics by liking a post about the topic. Her engagement with the content suggests she is open to exploring solutions that can improve clinic operations. Additionally, she sent a connection request after a webinar on clinic automation, indicating a level of engagement and potential interest in our product, Deskline.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 1,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L002",
+        "source": "linkedin",
+        "name": "Marcus Feldman",
+        "contact": {
+          "location": "Denver CO",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Marcus Feldman is Owner at Feldman Dental Group (Dental, size 1-10, Denver CO). Headline: Owner-dentist, 3 locations, always looking to cut admin overhead. Recent activity: Commented on a post asking for GHL recommendations. How they got on the list: No note, cold profile visit.",
+          "details": {
+            "job_title": "Owner",
+            "company": "Feldman Dental Group",
+            "industry": "Dental",
+            "company_size": "1-10",
+            "headline": "Owner-dentist, 3 locations, always looking to cut admin overhead",
+            "recent_activity": "Commented on a post asking for GHL recommendations",
+            "connection_note": "No note, cold profile visit"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 76,
+          "hints": [
+            "industry Dental fits clinic work",
+            "title weight from Owner",
+            "warmth engaged",
+            "weak buying language in the activity"
+          ],
+          "keyword_band": "weak",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 76. industry Dental fits clinic work; title weight from Owner; warmth engaged; weak buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 76. Pre-check was 76. Blended score 76 maps to warm. Intent: Exploring solutions to reduce admin overhead. This lead was scored as warm due to the owner's title weight from being an owner-dentist, indicating a high level of authority and decision-making power. Additionally, the recent activity of commenting on a post asking for GHL recommendations suggests that Marcus Feldman is actively looking for solutions to improve his clinic's operations. The lack of a note on how he got on the list indicates that the lead was not highly targeted, but the warm score still reflects the potential for a meaningful conversation about reducing admin overhead."
+        },
+        {
+          "step": "action",
+          "detail": "Warm, not a live hand-raise. Queue sales_nurture, tone conversational, channel linkedin."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Following up on admin efficiency"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_nurture via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 2"
+        }
+      ],
+      "qualification": {
+        "label": "warm",
+        "score": 76,
+        "intent": "Exploring solutions to reduce admin overhead",
+        "rationale": "This lead was scored as warm due to the owner's title weight from being an owner-dentist, indicating a high level of authority and decision-making power. Additionally, the recent activity of commenting on a post asking for GHL recommendations suggests that Marcus Feldman is actively looking for solutions to improve his clinic's operations. The lack of a note on how he got on the list indicates that the lead was not highly targeted, but the warm score still reflects the potential for a meaningful conversation about reducing admin overhead."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "conversational",
+        "escalate": false,
+        "queue": "sales_nurture"
+      },
+      "message": {
+        "subject": "Following up on admin efficiency",
+        "body": "Hi Marcus, I came across your profile and noticed you're the owner of Feldman Dental Group, with a focus on reducing admin overhead. I've seen that you recently commented on a post about GHL recommendations, suggesting you're actively looking for solutions to improve your clinic's operations. As someone who helps clinics like yours streamline their workflow, I'd love to explore how we can help you achieve your goals. Would you be open to a brief call to discuss further?"
+      },
+      "rationale": "This lead was scored as warm due to the owner's title weight from being an owner-dentist, indicating a high level of authority and decision-making power. Additionally, the recent activity of commenting on a post asking for GHL recommendations suggests that Marcus Feldman is actively looking for solutions to improve his clinic's operations. The lack of a note on how he got on the list indicates that the lead was not highly targeted, but the warm score still reflects the potential for a meaningful conversation about reducing admin overhead.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 2,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L003",
+        "source": "linkedin",
+        "name": "Priya Nair",
+        "contact": {
+          "location": "Toronto ON",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Priya Nair is Director of Operations at Sunrise Physiotherapy (Healthcare, size 51-200, Toronto ON). Headline: Ops leader scaling physio clinics across Ontario. Recent activity: Shared an article about patient no-show rates. How they got on the list: Mutual connection: former colleague.",
+          "details": {
+            "job_title": "Director of Operations",
+            "company": "Sunrise Physiotherapy",
+            "industry": "Healthcare",
+            "company_size": "51-200",
+            "headline": "Ops leader scaling physio clinics across Ontario",
+            "recent_activity": "Shared an article about patient no-show rates",
+            "connection_note": "Mutual connection: former colleague"
+          }
+        },
+        "priority_signal": {
+          "warmth": "mutual",
+          "heuristic_score": 83,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from Director of Operations",
+            "warmth mutual",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 83. industry Healthcare fits clinic work; title weight from Director of Operations; warmth mutual; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 83. Pre-check was 83. Blended score 83 maps to hot. Intent: expressing interest in a solution. Priya Nair, Director of Operations at Sunrise Physiotherapy, has a strong buying language in her recent activity, sharing an article about patient no-show rates. This suggests she is looking for ways to address operational challenges. The mutual connection also indicates a level of trust and warmth in their relationship, making her a warm lead. The fact that her title weight from Director of Operations and the clinic's size (51-200) in the Healthcare industry further supports this classification."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is false because warmth is mutual and the score is 83."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Scaling Operational Efficiency"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 3"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 83,
+        "intent": "expressing interest in a solution",
+        "rationale": "Priya Nair, Director of Operations at Sunrise Physiotherapy, has a strong buying language in her recent activity, sharing an article about patient no-show rates. This suggests she is looking for ways to address operational challenges. The mutual connection also indicates a level of trust and warmth in their relationship, making her a warm lead. The fact that her title weight from Director of Operations and the clinic's size (51-200) in the Healthcare industry further supports this classification."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": false,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Scaling Operational Efficiency",
+        "body": "Hi Priya, I came across your recent article about patient no-show rates and couldn't help but think of how it relates to operational challenges in healthcare. As someone who's scaled physio clinics across Ontario, I'm sure you understand the importance of streamlining processes. I'd love to explore how our solution can help you tackle no-shows and optimize your operations. Would you be open to a quick call to discuss further?"
+      },
+      "rationale": "Priya Nair, Director of Operations at Sunrise Physiotherapy, has a strong buying language in her recent activity, sharing an article about patient no-show rates. This suggests she is looking for ways to address operational challenges. The mutual connection also indicates a level of trust and warmth in their relationship, making her a warm lead. The fact that her title weight from Director of Operations and the clinic's size (51-200) in the Healthcare industry further supports this classification.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 3,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L004",
+        "source": "linkedin",
+        "name": "James O'Connell",
+        "contact": {
+          "location": "Miami FL",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "James O'Connell is Founder at O'Connell Med Spa (Medspa, size 1-10, Miami FL). Headline: Founder, medspa entrepreneur, ex-nurse. Recent activity: Posted about struggling with lead follow-up speed. How they got on the list: Cold outreach, no prior interaction.",
+          "details": {
+            "job_title": "Founder",
+            "company": "O'Connell Med Spa",
+            "industry": "Medspa",
+            "company_size": "1-10",
+            "headline": "Founder, medspa entrepreneur, ex-nurse",
+            "recent_activity": "Posted about struggling with lead follow-up speed",
+            "connection_note": "Cold outreach, no prior interaction"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 84,
+          "hints": [
+            "industry Medspa fits clinic work",
+            "title weight from Founder",
+            "warmth engaged",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 84. industry Medspa fits clinic work; title weight from Founder; warmth engaged; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 84. Pre-check was 84. Blended score 84 maps to hot. Intent: Seeking help with lead follow-up. The score of 84 is based on the fact that James O'Connell, as a founder of a medspa, has a strong buying language in his recent activity, where he posted about struggling with lead follow-up speed. This indicates that he is likely looking for a solution to improve his business. Additionally, the fact that he has a strong title weight as a founder and has engaged with the outreach, suggests that he is open to new ideas and is willing to consider a solution. The fact that he is posting about a specific pain point, rather than just promoting his business, further supports the warm lead classification."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is false because warmth is engaged and the score is 84."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Your Medspa Business Could Be Optimized"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 4"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 84,
+        "intent": "Seeking help with lead follow-up",
+        "rationale": "The score of 84 is based on the fact that James O'Connell, as a founder of a medspa, has a strong buying language in his recent activity, where he posted about struggling with lead follow-up speed. This indicates that he is likely looking for a solution to improve his business. Additionally, the fact that he has a strong title weight as a founder and has engaged with the outreach, suggests that he is open to new ideas and is willing to consider a solution. The fact that he is posting about a specific pain point, rather than just promoting his business, further supports the warm lead classification."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": false,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Your Medspa Business Could Be Optimized",
+        "body": "As a founder of O'Connell Med Spa, I noticed you recently shared your struggles with lead follow-up speed. As a business owner in the medspa industry, I'd like to know if you've considered a solution to streamline your lead follow-up process. I'd be happy to discuss potential options with you."
+      },
+      "rationale": "The score of 84 is based on the fact that James O'Connell, as a founder of a medspa, has a strong buying language in his recent activity, where he posted about struggling with lead follow-up speed. This indicates that he is likely looking for a solution to improve his business. Additionally, the fact that he has a strong title weight as a founder and has engaged with the outreach, suggests that he is open to new ideas and is willing to consider a solution. The fact that he is posting about a specific pain point, rather than just promoting his business, further supports the warm lead classification.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 4,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L005",
+        "source": "linkedin",
+        "name": "Angela Torres",
+        "contact": {
+          "location": "Phoenix AZ",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Angela Torres is VP Marketing at ClearPath Urgent Care (Healthcare, size 201-500, Phoenix AZ). Headline: VP Marketing scaling multi-location urgent care brand. Recent activity: Attended a HubSpot webinar last week. How they got on the list: Requested a demo via website form.",
+          "details": {
+            "job_title": "VP Marketing",
+            "company": "ClearPath Urgent Care",
+            "industry": "Healthcare",
+            "company_size": "201-500",
+            "headline": "VP Marketing scaling multi-location urgent care brand",
+            "recent_activity": "Attended a HubSpot webinar last week",
+            "connection_note": "Requested a demo via website form"
+          }
+        },
+        "priority_signal": {
+          "warmth": "demo",
+          "heuristic_score": 84,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from VP Marketing",
+            "warmth demo",
+            "weak buying language in the activity"
+          ],
+          "keyword_band": "weak",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 84. industry Healthcare fits clinic work; title weight from VP Marketing; warmth demo; weak buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 84. Pre-check was 84. Blended score 84 maps to hot. Intent: Marketing Partnership Inquiry. This lead is warm because Angela Torres, as VP Marketing at ClearPath Urgent Care, has shown interest in scaling their multi-location urgent care brand. The fact that she attended a HubSpot webinar last week and requested a demo via website form indicates a level of engagement and potential for marketing partnership discussion. The score of 84 reflects the combination of industry fit, title weight, warmth from the demo, and weak buying language in the activity, which suggests a moderate level of interest and potential for further qualification."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is true because warmth is demo and the score is 84."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Scaling Urgent Care: Exploring Opportunities"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 5"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 84,
+        "intent": "Marketing Partnership Inquiry",
+        "rationale": "This lead is warm because Angela Torres, as VP Marketing at ClearPath Urgent Care, has shown interest in scaling their multi-location urgent care brand. The fact that she attended a HubSpot webinar last week and requested a demo via website form indicates a level of engagement and potential for marketing partnership discussion. The score of 84 reflects the combination of industry fit, title weight, warmth from the demo, and weak buying language in the activity, which suggests a moderate level of interest and potential for further qualification."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": true,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Scaling Urgent Care: Exploring Opportunities",
+        "body": "Angela Torres, VP Marketing at ClearPath Urgent Care, has been scaling their multi-location urgent care brand. Her recent attendance at a HubSpot webinar and request for a demo via website form indicate a strong interest in marketing solutions. As someone in a similar role, I'd love to discuss how our AI-powered receptionist, Deskline, can help streamline operations and enhance patient engagement. Would you be open to a brief call to explore further?"
+      },
+      "rationale": "This lead is warm because Angela Torres, as VP Marketing at ClearPath Urgent Care, has shown interest in scaling their multi-location urgent care brand. The fact that she attended a HubSpot webinar last week and requested a demo via website form indicates a level of engagement and potential for marketing partnership discussion. The score of 84 reflects the combination of industry fit, title weight, warmth from the demo, and weak buying language in the activity, which suggests a moderate level of interest and potential for further qualification.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 5,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L006",
+        "source": "linkedin",
+        "name": "David Kim",
+        "contact": {
+          "location": "Seattle WA",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "David Kim is CEO at Kim Chiropractic Network (Chiropractic, size 11-50, Seattle WA). Headline: CEO running a 6-clinic chiropractic network. Recent activity: Liked competitor's AI voice agent case study. How they got on the list: No note, LinkedIn Sales Navigator saved search.",
+          "details": {
+            "job_title": "CEO",
+            "company": "Kim Chiropractic Network",
+            "industry": "Chiropractic",
+            "company_size": "11-50",
+            "headline": "CEO running a 6-clinic chiropractic network",
+            "recent_activity": "Liked competitor's AI voice agent case study",
+            "connection_note": "No note, LinkedIn Sales Navigator saved search"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 76,
+          "hints": [
+            "industry Chiropractic fits clinic work",
+            "title weight from CEO",
+            "warmth engaged",
+            "weak buying language in the activity"
+          ],
+          "keyword_band": "weak",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 76. industry Chiropractic fits clinic work; title weight from CEO; warmth engaged; weak buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 76. Pre-check was 76. Blended score 76 maps to warm. Intent: evaluation. The score of 76 indicates a moderate level of interest and engagement from David Kim, CEO of Kim Chiropractic Network. The fact that he liked a competitor's AI voice agent case study suggests he is open to exploring new technologies for his business. However, the lack of a personal connection or direct engagement with Deskline's AI receptionist product keeps the score from being higher. The industry fit and title weight from CEO also contribute to the warm label, as they indicate a potential interest in a solution that could benefit his chiropractic network. Overall, this lead shows promise, but further engagement is needed to move it to a hotter lead."
+        },
+        {
+          "step": "action",
+          "detail": "Warm, not a live hand-raise. Queue sales_nurture, tone conversational, channel linkedin."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Thinking of AI for Your Chiropractic Network"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_nurture via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 6"
+        }
+      ],
+      "qualification": {
+        "label": "warm",
+        "score": 76,
+        "intent": "evaluation",
+        "rationale": "The score of 76 indicates a moderate level of interest and engagement from David Kim, CEO of Kim Chiropractic Network. The fact that he liked a competitor's AI voice agent case study suggests he is open to exploring new technologies for his business. However, the lack of a personal connection or direct engagement with Deskline's AI receptionist product keeps the score from being higher. The industry fit and title weight from CEO also contribute to the warm label, as they indicate a potential interest in a solution that could benefit his chiropractic network. Overall, this lead shows promise, but further engagement is needed to move it to a hotter lead."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "conversational",
+        "escalate": false,
+        "queue": "sales_nurture"
+      },
+      "message": {
+        "subject": "Thinking of AI for Your Chiropractic Network",
+        "body": "Hi David, I came across your profile and noticed you liked a recent AI voice agent case study from a competitor. As a CEO of a 6-clinic chiropractic network, I thought you might be interested in exploring how AI can streamline your practice. Deskline's AI receptionist is designed to help clinics like yours manage day-to-day tasks and focus on patient care. Would love to schedule a call to discuss further and see if we can help you optimize your operations."
+      },
+      "rationale": "The score of 76 indicates a moderate level of interest and engagement from David Kim, CEO of Kim Chiropractic Network. The fact that he liked a competitor's AI voice agent case study suggests he is open to exploring new technologies for his business. However, the lack of a personal connection or direct engagement with Deskline's AI receptionist product keeps the score from being higher. The industry fit and title weight from CEO also contribute to the warm label, as they indicate a potential interest in a solution that could benefit his chiropractic network. Overall, this lead shows promise, but further engagement is needed to move it to a hotter lead.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 6,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L007",
+        "source": "linkedin",
+        "name": "Laura Bianchi",
+        "contact": {
+          "location": "Newark NJ",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Laura Bianchi is Office Manager at Bianchi Orthodontics (Dental, size 1-10, Newark NJ). Headline: Office manager, small ortho practice, solo admin. Recent activity: Commented asking about missed call recovery tools. How they got on the list: Warm intro from existing client.",
+          "details": {
+            "job_title": "Office Manager",
+            "company": "Bianchi Orthodontics",
+            "industry": "Dental",
+            "company_size": "1-10",
+            "headline": "Office manager, small ortho practice, solo admin",
+            "recent_activity": "Commented asking about missed call recovery tools",
+            "connection_note": "Warm intro from existing client"
+          }
+        },
+        "priority_signal": {
+          "warmth": "warm_intro",
+          "heuristic_score": 88,
+          "hints": [
+            "industry Dental fits clinic work",
+            "title weight from Office Manager",
+            "warmth warm_intro",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 88. industry Dental fits clinic work; title weight from Office Manager; warmth warm_intro; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 88. Pre-check was 88. Blended score 88 maps to hot. Intent: Inquiry about product. The score of 88 is based on the fact that Laura Bianchi, the Office Manager at Bianchi Orthodontics, recently commented on a missed call recovery tool, indicating interest in the product. The warm label is assigned because she was introduced to the product through an existing client, which suggests a level of familiarity and trust. The fact that she is the Office Manager of a small orthodontic practice also aligns with the target audience for Deskline's AI receptionist solution."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is true because warmth is warm_intro and the score is 88."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Following up on Missed Call Recovery Tools"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 7"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 88,
+        "intent": "Inquiry about product",
+        "rationale": "The score of 88 is based on the fact that Laura Bianchi, the Office Manager at Bianchi Orthodontics, recently commented on a missed call recovery tool, indicating interest in the product. The warm label is assigned because she was introduced to the product through an existing client, which suggests a level of familiarity and trust. The fact that she is the Office Manager of a small orthodontic practice also aligns with the target audience for Deskline's AI receptionist solution."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": true,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Following up on Missed Call Recovery Tools",
+        "body": "Laura, I noticed you recently commented on our missed call recovery tool, expressing interest in learning more. As someone who manages a small orthodontic practice, I think our AI-powered receptionist solution could be a great fit for your solo administrative needs. I'd love to schedule a call to discuss how Deskline can help streamline your daily tasks and improve patient engagement. Would you be open to a quick conversation next week?"
+      },
+      "rationale": "The score of 88 is based on the fact that Laura Bianchi, the Office Manager at Bianchi Orthodontics, recently commented on a missed call recovery tool, indicating interest in the product. The warm label is assigned because she was introduced to the product through an existing client, which suggests a level of familiarity and trust. The fact that she is the Office Manager of a small orthodontic practice also aligns with the target audience for Deskline's AI receptionist solution.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 7,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L008",
+        "source": "linkedin",
+        "name": "Samuel Okafor",
+        "contact": {
+          "location": "Houston TX",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Samuel Okafor is Practice Owner at Okafor Eye Care (Healthcare, size 1-10, Houston TX). Headline: Optometrist and practice owner, tech-curious. Recent activity: Shared a post about patient scheduling pain points. How they got on the list: Cold profile visit, viewed our page twice.",
+          "details": {
+            "job_title": "Practice Owner",
+            "company": "Okafor Eye Care",
+            "industry": "Healthcare",
+            "company_size": "1-10",
+            "headline": "Optometrist and practice owner, tech-curious",
+            "recent_activity": "Shared a post about patient scheduling pain points",
+            "connection_note": "Cold profile visit, viewed our page twice"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 84,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from Practice Owner",
+            "warmth engaged",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 84. industry Healthcare fits clinic work; title weight from Practice Owner; warmth engaged; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 84. Pre-check was 84. Blended score 84 maps to hot. Intent: expressing pain points. This lead is warm because Samuel Okafor, the Practice Owner at Okafor Eye Care, has shown engagement with the clinic's page by viewing it twice, indicating some level of interest. Additionally, his recent activity of sharing a post about patient scheduling pain points suggests that he is actively looking for solutions to a problem that the clinic can address. The fact that he has a strong buying language in the activity further supports this warm lead classification. The pre-check score of 84 confirms this assessment, with industry fit, title weight, warmth engaged, and strong buying language all contributing to the warm label."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is false because warmth is engaged and the score is 84."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Thoughts on Patient Scheduling"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 8"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 84,
+        "intent": "expressing pain points",
+        "rationale": "This lead is warm because Samuel Okafor, the Practice Owner at Okafor Eye Care, has shown engagement with the clinic's page by viewing it twice, indicating some level of interest. Additionally, his recent activity of sharing a post about patient scheduling pain points suggests that he is actively looking for solutions to a problem that the clinic can address. The fact that he has a strong buying language in the activity further supports this warm lead classification. The pre-check score of 84 confirms this assessment, with industry fit, title weight, warmth engaged, and strong buying language all contributing to the warm label."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": false,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Thoughts on Patient Scheduling",
+        "body": "As an optometrist and practice owner, I'm always on the lookout for ways to streamline my scheduling process. Recently, I shared a post about the pain points I've been experiencing with patient scheduling, and I'd love to hear from others who may have found solutions. Are there any clinics or tools that have helped you optimize your scheduling workflow?"
+      },
+      "rationale": "This lead is warm because Samuel Okafor, the Practice Owner at Okafor Eye Care, has shown engagement with the clinic's page by viewing it twice, indicating some level of interest. Additionally, his recent activity of sharing a post about patient scheduling pain points suggests that he is actively looking for solutions to a problem that the clinic can address. The fact that he has a strong buying language in the activity further supports this warm lead classification. The pre-check score of 84 confirms this assessment, with industry fit, title weight, warmth engaged, and strong buying language all contributing to the warm label.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 8,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L009",
+        "source": "linkedin",
+        "name": "Emily Zhang",
+        "contact": {
+          "location": "San Diego CA",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Emily Zhang is Clinical Director at Vitality Wellness Group (Wellness, size 51-200, San Diego CA). Headline: Clinical director overseeing 4 wellness centers. Recent activity: Posted about hiring more front-desk staff due to call volume. How they got on the list: Requested pricing info via LinkedIn message.",
+          "details": {
+            "job_title": "Clinical Director",
+            "company": "Vitality Wellness Group",
+            "industry": "Wellness",
+            "company_size": "51-200",
+            "headline": "Clinical director overseeing 4 wellness centers",
+            "recent_activity": "Posted about hiring more front-desk staff due to call volume",
+            "connection_note": "Requested pricing info via LinkedIn message"
+          }
+        },
+        "priority_signal": {
+          "warmth": "pricing",
+          "heuristic_score": 95,
+          "hints": [
+            "industry Wellness fits clinic work",
+            "title weight from Clinical Director",
+            "warmth pricing",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 95. industry Wellness fits clinic work; title weight from Clinical Director; warmth pricing; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said hot / 95. Pre-check was 95. Blended score 95 maps to hot. Intent: Job Inquiry. The score is hot because Emily Zhang, a Clinical Director at Vitality Wellness Group, requested pricing information via LinkedIn message, indicating a strong interest in the product. The fact that she posted about hiring more front-desk staff due to call volume suggests that she is experiencing challenges with her current receptionist system, making her a potential candidate for a solution like Deskline. The title weight from Clinical Director further emphasizes her authority and decision-making power, increasing the likelihood that she will consider a new solution for her clinic's receptionist needs."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is true because warmth is pricing and the score is 95."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Exploring a New Receptionist Solution"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 9"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 95,
+        "intent": "Job Inquiry",
+        "rationale": "The score is hot because Emily Zhang, a Clinical Director at Vitality Wellness Group, requested pricing information via LinkedIn message, indicating a strong interest in the product. The fact that she posted about hiring more front-desk staff due to call volume suggests that she is experiencing challenges with her current receptionist system, making her a potential candidate for a solution like Deskline. The title weight from Clinical Director further emphasizes her authority and decision-making power, increasing the likelihood that she will consider a new solution for her clinic's receptionist needs."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": true,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Exploring a New Receptionist Solution",
+        "body": "As a Clinical Director at Vitality Wellness Group, overseeing 4 wellness centers, I noticed your recent post about hiring more front-desk staff due to call volume. I'm curious to understand how you're managing your clinic's receptionist system, especially with the increasing call volume. Would you be open to discussing potential solutions that could help streamline your operations and improve patient experience?"
+      },
+      "rationale": "The score is hot because Emily Zhang, a Clinical Director at Vitality Wellness Group, requested pricing information via LinkedIn message, indicating a strong interest in the product. The fact that she posted about hiring more front-desk staff due to call volume suggests that she is experiencing challenges with her current receptionist system, making her a potential candidate for a solution like Deskline. The title weight from Clinical Director further emphasizes her authority and decision-making power, increasing the likelihood that she will consider a new solution for her clinic's receptionist needs.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 9,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L010",
+        "source": "linkedin",
+        "name": "Robert Hayes",
+        "contact": {
+          "location": "Nashville TN",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Robert Hayes is Owner at Hayes Family Dentistry (Dental, size 1-10, Nashville TN). Headline: Family dentist, owner-operator, 15 years in practice. Recent activity: No recent activity. How they got on the list: No note, imported from trade show list.",
+          "details": {
+            "job_title": "Owner",
+            "company": "Hayes Family Dentistry",
+            "industry": "Dental",
+            "company_size": "1-10",
+            "headline": "Family dentist, owner-operator, 15 years in practice",
+            "recent_activity": "No recent activity",
+            "connection_note": "No note, imported from trade show list"
+          }
+        },
+        "priority_signal": {
+          "warmth": "cold",
+          "heuristic_score": 48,
+          "hints": [
+            "industry Dental fits clinic work",
+            "title weight from Owner",
+            "warmth cold"
+          ],
+          "keyword_band": "none",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 48. industry Dental fits clinic work; title weight from Owner; warmth cold."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said cold / 48. Pre-check was 48. Blended score 48 maps to cold. Intent: Potential lead. The score of 48 is based on the fact that Robert Hayes is a local owner in the dental industry, which fits the clinic work of Deskline. However, the lack of recent activity and no note on how he got on the list indicate a lower level of engagement or interest. The title weight from 'Owner' contributes to the cold label, suggesting that Hayes may not be actively seeking new solutions or technologies. Overall, while Hayes has a strong local presence, his current activity level and lack of engagement with Deskline make him a cold lead."
+        },
+        {
+          "step": "action",
+          "detail": "Cold or quiet record. Light touch on LinkedIn, sales_cold, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Local Dental Expert Worth Exploring"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_cold via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 10"
+        }
+      ],
+      "qualification": {
+        "label": "cold",
+        "score": 48,
+        "intent": "Potential lead",
+        "rationale": "The score of 48 is based on the fact that Robert Hayes is a local owner in the dental industry, which fits the clinic work of Deskline. However, the lack of recent activity and no note on how he got on the list indicate a lower level of engagement or interest. The title weight from 'Owner' contributes to the cold label, suggesting that Hayes may not be actively seeking new solutions or technologies. Overall, while Hayes has a strong local presence, his current activity level and lack of engagement with Deskline make him a cold lead."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "light",
+        "escalate": false,
+        "queue": "sales_cold"
+      },
+      "message": {
+        "subject": "Local Dental Expert Worth Exploring",
+        "body": "As a local business owner in the dental industry, Robert Hayes at Hayes Family Dentistry has built a reputation for delivering quality care to his community. With 15 years of experience as a family dentist and owner-operator, he must have developed a keen understanding of the latest trends and technologies. I'm curious to learn more about how he approaches patient engagement and workflow management in his practice. Would you be open to discussing potential solutions to optimize his clinic's operations?"
+      },
+      "rationale": "The score of 48 is based on the fact that Robert Hayes is a local owner in the dental industry, which fits the clinic work of Deskline. However, the lack of recent activity and no note on how he got on the list indicate a lower level of engagement or interest. The title weight from 'Owner' contributes to the cold label, suggesting that Hayes may not be actively seeking new solutions or technologies. Overall, while Hayes has a strong local presence, his current activity level and lack of engagement with Deskline make him a cold lead.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 10,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L011",
+        "source": "linkedin",
+        "name": "Nina Patel",
+        "contact": {
+          "location": "Los Angeles CA",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Nina Patel is Growth Manager at MedSpa Collective (Medspa, size 11-50, Los Angeles CA). Headline: Growth manager for a multi-brand medspa collective. Recent activity: Liked a post about AI-driven booking conversion. How they got on the list: Connected after LinkedIn ad campaign click.",
+          "details": {
+            "job_title": "Growth Manager",
+            "company": "MedSpa Collective",
+            "industry": "Medspa",
+            "company_size": "11-50",
+            "headline": "Growth manager for a multi-brand medspa collective",
+            "recent_activity": "Liked a post about AI-driven booking conversion",
+            "connection_note": "Connected after LinkedIn ad campaign click"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 76,
+          "hints": [
+            "industry Medspa fits clinic work",
+            "title weight from Growth Manager",
+            "warmth engaged",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 76. industry Medspa fits clinic work; title weight from Growth Manager; warmth engaged; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 76. Pre-check was 76. Blended score 76 maps to warm. Intent: expressed interest. Nina Patel, Growth Manager at MedSpa Collective, showed engagement with a post about AI-driven booking conversion, indicating interest in the topic. Her connection to the lead was established through a LinkedIn ad campaign click, suggesting a potential lead. The score of 76 is based on the industry fit, title weight, warmth of engagement, and strong buying language in the activity, all of which contribute to a warm lead classification."
+        },
+        {
+          "step": "action",
+          "detail": "Warm, not a live hand-raise. Queue sales_nurture, tone conversational, channel linkedin."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Following up on AI-driven booking insights"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_nurture via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 11"
+        }
+      ],
+      "qualification": {
+        "label": "warm",
+        "score": 76,
+        "intent": "expressed interest",
+        "rationale": "Nina Patel, Growth Manager at MedSpa Collective, showed engagement with a post about AI-driven booking conversion, indicating interest in the topic. Her connection to the lead was established through a LinkedIn ad campaign click, suggesting a potential lead. The score of 76 is based on the industry fit, title weight, warmth of engagement, and strong buying language in the activity, all of which contribute to a warm lead classification."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "conversational",
+        "escalate": false,
+        "queue": "sales_nurture"
+      },
+      "message": {
+        "subject": "Following up on AI-driven booking insights",
+        "body": "I came across your profile as a Growth Manager at MedSpa Collective and noticed you liked a recent post about AI-driven booking conversion. It seems like you're interested in exploring ways to optimize your practice's booking process. I'd love to discuss how our AI receptionist, Deskline, can help streamline your clinic's workflow and improve patient engagement. Would you be open to a quick call to explore further?"
+      },
+      "rationale": "Nina Patel, Growth Manager at MedSpa Collective, showed engagement with a post about AI-driven booking conversion, indicating interest in the topic. Her connection to the lead was established through a LinkedIn ad campaign click, suggesting a potential lead. The score of 76 is based on the industry fit, title weight, warmth of engagement, and strong buying language in the activity, all of which contribute to a warm lead classification.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 11,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L012",
+        "source": "linkedin",
+        "name": "Tom Whitfield",
+        "contact": {
+          "location": "Charlotte NC",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Tom Whitfield is Founder & CEO at Whitfield Urgent Care (Healthcare, size 11-50, Charlotte NC). Headline: Founder, ex-ER physician, building urgent care chain. Recent activity: Commented on a post about after-hours call handling. How they got on the list: Cold outreach, no interaction history.",
+          "details": {
+            "job_title": "Founder & CEO",
+            "company": "Whitfield Urgent Care",
+            "industry": "Healthcare",
+            "company_size": "11-50",
+            "headline": "Founder, ex-ER physician, building urgent care chain",
+            "recent_activity": "Commented on a post about after-hours call handling",
+            "connection_note": "Cold outreach, no interaction history"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 84,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from Founder & CEO",
+            "warmth engaged",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 84. industry Healthcare fits clinic work; title weight from Founder & CEO; warmth engaged; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 84. Pre-check was 84. Blended score 84 maps to hot. Intent: expressed interest. The score of 84 is based on the fact that Tom Whitfield used strong buying language in his recent activity, commenting on a post about after-hours call handling. This engagement suggests that he is interested in the topic and may be looking for a solution. Additionally, his title as Founder & CEO and his experience as an ex-ER physician lend weight to his credibility and potential interest in Deskline's product. The fact that he was added to the list through cold outreach, with no interaction history, also indicates that he is open to new ideas and may be more receptive to a sales approach."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is false because warmth is engaged and the score is 84."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Your Urgent Care Chain is on the Rise"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 12"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 84,
+        "intent": "expressed interest",
+        "rationale": "The score of 84 is based on the fact that Tom Whitfield used strong buying language in his recent activity, commenting on a post about after-hours call handling. This engagement suggests that he is interested in the topic and may be looking for a solution. Additionally, his title as Founder & CEO and his experience as an ex-ER physician lend weight to his credibility and potential interest in Deskline's product. The fact that he was added to the list through cold outreach, with no interaction history, also indicates that he is open to new ideas and may be more receptive to a sales approach."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": false,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Your Urgent Care Chain is on the Rise",
+        "body": "As a former ER physician, Tom Whitfield has a unique understanding of the challenges that come with managing urgent care operations, especially outside of regular hours. His experience and expertise could be a valuable asset in building a successful urgent care chain. I'd love to discuss how Deskline's AI receptionist can help streamline after-hours call handling and improve patient satisfaction. Would you be open to a quick call to explore further?"
+      },
+      "rationale": "The score of 84 is based on the fact that Tom Whitfield used strong buying language in his recent activity, commenting on a post about after-hours call handling. This engagement suggests that he is interested in the topic and may be looking for a solution. Additionally, his title as Founder & CEO and his experience as an ex-ER physician lend weight to his credibility and potential interest in Deskline's product. The fact that he was added to the list through cold outreach, with no interaction history, also indicates that he is open to new ideas and may be more receptive to a sales approach.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 12,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L013",
+        "source": "linkedin",
+        "name": "Grace Liu",
+        "contact": {
+          "location": "Vancouver BC",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Grace Liu is Operations Lead at Bloom Physiotherapy (Healthcare, size 1-10, Vancouver BC). Headline: Ops lead, single-location physio clinic, hands-on. Recent activity: Shared an article on patient retention strategies. How they got on the list: No note, LinkedIn group member.",
+          "details": {
+            "job_title": "Operations Lead",
+            "company": "Bloom Physiotherapy",
+            "industry": "Healthcare",
+            "company_size": "1-10",
+            "headline": "Ops lead, single-location physio clinic, hands-on",
+            "recent_activity": "Shared an article on patient retention strategies",
+            "connection_note": "No note, LinkedIn group member"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 63,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from Operations Lead",
+            "warmth engaged",
+            "weak buying language in the activity"
+          ],
+          "keyword_band": "weak",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 63. industry Healthcare fits clinic work; title weight from Operations Lead; warmth engaged; weak buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 63. Pre-check was 63. Blended score 63 maps to warm. Intent: exploration. The score of 63 indicates a moderate level of engagement, as the Operations Lead, Grace Liu, shared an article on patient retention strategies, showing interest in the topic. However, the lack of a note on how they got on the list and the weak buying language in the activity ('hands-on') suggest that this lead may not be highly qualified. The fact that they are a LinkedIn group member adds to the warmth of the lead, but the overall score is not high enough to be considered 'hot'."
+        },
+        {
+          "step": "action",
+          "detail": "Warm, not a live hand-raise. Queue sales_nurture, tone conversational, channel linkedin."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Following up on patient retention strategies"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_nurture via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 13"
+        }
+      ],
+      "qualification": {
+        "label": "warm",
+        "score": 63,
+        "intent": "exploration",
+        "rationale": "The score of 63 indicates a moderate level of engagement, as the Operations Lead, Grace Liu, shared an article on patient retention strategies, showing interest in the topic. However, the lack of a note on how they got on the list and the weak buying language in the activity ('hands-on') suggest that this lead may not be highly qualified. The fact that they are a LinkedIn group member adds to the warmth of the lead, but the overall score is not high enough to be considered 'hot'."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "conversational",
+        "escalate": false,
+        "queue": "sales_nurture"
+      },
+      "message": {
+        "subject": "Following up on patient retention strategies",
+        "body": "I saw that you shared an article on patient retention strategies as Operations Lead at Bloom Physiotherapy. As someone who's interested in the healthcare industry, I thought it was worth exploring further. Are you looking to expand your practice or explore new ways to improve patient engagement? I'd love to discuss potential opportunities that might align with your goals."
+      },
+      "rationale": "The score of 63 indicates a moderate level of engagement, as the Operations Lead, Grace Liu, shared an article on patient retention strategies, showing interest in the topic. However, the lack of a note on how they got on the list and the weak buying language in the activity ('hands-on') suggest that this lead may not be highly qualified. The fact that they are a LinkedIn group member adds to the warmth of the lead, but the overall score is not high enough to be considered 'hot'.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 13,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L014",
+        "source": "linkedin",
+        "name": "Anthony Russo",
+        "contact": {
+          "location": "Tampa FL",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Anthony Russo is Practice Manager at Russo Chiropractic (Chiropractic, size 1-10, Tampa FL). Headline: Practice manager, family-run chiropractic office. Recent activity: No recent activity, dormant profile. How they got on the list: Cold outreach via Sales Navigator.",
+          "details": {
+            "job_title": "Practice Manager",
+            "company": "Russo Chiropractic",
+            "industry": "Chiropractic",
+            "company_size": "1-10",
+            "headline": "Practice manager, family-run chiropractic office",
+            "recent_activity": "No recent activity, dormant profile",
+            "connection_note": "Cold outreach via Sales Navigator"
+          }
+        },
+        "priority_signal": {
+          "warmth": "cold",
+          "heuristic_score": 40,
+          "hints": [
+            "industry Chiropractic fits clinic work",
+            "title weight from Practice Manager",
+            "warmth cold"
+          ],
+          "keyword_band": "none",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 40. industry Chiropractic fits clinic work; title weight from Practice Manager; warmth cold."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said cold / 40. Pre-check was 40. Blended score 40 maps to cold. Intent: Sales Lead. The Practice Manager's title and industry fit the clinic work, but the lack of recent activity and dormant profile indicate a cold lead. The fact that the lead was acquired through cold outreach via Sales Navigator further supports this classification. The low score reflects the limited information available about the lead's current activity or potential interest in Deskline."
+        },
+        {
+          "step": "action",
+          "detail": "Cold or quiet record. Light touch on LinkedIn, sales_cold, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Your practice deserves a boost"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_cold via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 14"
+        }
+      ],
+      "qualification": {
+        "label": "cold",
+        "score": 40,
+        "intent": "Sales Lead",
+        "rationale": "The Practice Manager's title and industry fit the clinic work, but the lack of recent activity and dormant profile indicate a cold lead. The fact that the lead was acquired through cold outreach via Sales Navigator further supports this classification. The low score reflects the limited information available about the lead's current activity or potential interest in Deskline."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "light",
+        "escalate": false,
+        "queue": "sales_cold"
+      },
+      "message": {
+        "subject": "Your practice deserves a boost",
+        "body": "As a Practice Manager at Russo Chiropractic, you wear many hats. From managing staff to keeping up-to-date with the latest chiropractic techniques, it's clear you're dedicated to providing top-notch care to your patients. I was curious to learn more about your practice and how I can help you streamline your workflow and free up more time for what matters most. Would you be open to a quick call to discuss some potential solutions?"
+      },
+      "rationale": "The Practice Manager's title and industry fit the clinic work, but the lack of recent activity and dormant profile indicate a cold lead. The fact that the lead was acquired through cold outreach via Sales Navigator further supports this classification. The low score reflects the limited information available about the lead's current activity or potential interest in Deskline.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 14,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L015",
+        "source": "linkedin",
+        "name": "Sophia Bennett",
+        "contact": {
+          "location": "Chicago IL",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Sophia Bennett is Director of Patient Experience at CarePoint Clinics (Healthcare, size 201-500, Chicago IL). Headline: Director of patient experience across a regional clinic network. Recent activity: Posted about launching an AI chatbot pilot. How they got on the list: Requested a call after seeing our case study.",
+          "details": {
+            "job_title": "Director of Patient Experience",
+            "company": "CarePoint Clinics",
+            "industry": "Healthcare",
+            "company_size": "201-500",
+            "headline": "Director of patient experience across a regional clinic network",
+            "recent_activity": "Posted about launching an AI chatbot pilot",
+            "connection_note": "Requested a call after seeing our case study"
+          }
+        },
+        "priority_signal": {
+          "warmth": "demo",
+          "heuristic_score": 84,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from Director of Patient Experience",
+            "warmth demo",
+            "weak buying language in the activity"
+          ],
+          "keyword_band": "weak",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 84. industry Healthcare fits clinic work; title weight from Director of Patient Experience; warmth demo; weak buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 84. Pre-check was 84. Blended score 84 maps to hot. Intent: Expression of interest. The fact that Sophia Bennett is a Director of Patient Experience at a regional clinic network (size 201-500) and has recently posted about launching an AI chatbot pilot, indicates that she is likely familiar with the challenges of implementing new technologies in a healthcare setting. The request for a call after seeing a case study further suggests that she is interested in learning more about Deskline and its potential benefits for her clinic."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is true because warmth is demo and the score is 84."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Exploring AI Chatbot Potential for Patient Experience"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 15"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 84,
+        "intent": "Expression of interest",
+        "rationale": "The fact that Sophia Bennett is a Director of Patient Experience at a regional clinic network (size 201-500) and has recently posted about launching an AI chatbot pilot, indicates that she is likely familiar with the challenges of implementing new technologies in a healthcare setting. The request for a call after seeing a case study further suggests that she is interested in learning more about Deskline and its potential benefits for her clinic."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": true,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Exploring AI Chatbot Potential for Patient Experience",
+        "body": "As a Director of Patient Experience at CarePoint Clinics, I noticed your recent post about launching an AI chatbot pilot. I'm intrigued by the potential benefits of AI in enhancing patient experience. Our AI receptionist, Deskline, has helped several clinics streamline their front desk operations and improve patient engagement. I'd love to discuss how Deskline can address similar challenges at your clinic. Would you be open to a brief call to explore further?"
+      },
+      "rationale": "The fact that Sophia Bennett is a Director of Patient Experience at a regional clinic network (size 201-500) and has recently posted about launching an AI chatbot pilot, indicates that she is likely familiar with the challenges of implementing new technologies in a healthcare setting. The request for a call after seeing a case study further suggests that she is interested in learning more about Deskline and its potential benefits for her clinic.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 15,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L016",
+        "source": "linkedin",
+        "name": "Michael Duran",
+        "contact": {
+          "location": "San Antonio TX",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Michael Duran is Owner at Duran Dental Studio (Dental, size 1-10, San Antonio TX). Headline: Owner-dentist, single practice, very active on LinkedIn. Recent activity: Liked 3 posts about dental practice marketing this month. How they got on the list: Connected via mutual dental association group.",
+          "details": {
+            "job_title": "Owner",
+            "company": "Duran Dental Studio",
+            "industry": "Dental",
+            "company_size": "1-10",
+            "headline": "Owner-dentist, single practice, very active on LinkedIn",
+            "recent_activity": "Liked 3 posts about dental practice marketing this month",
+            "connection_note": "Connected via mutual dental association group"
+          }
+        },
+        "priority_signal": {
+          "warmth": "mutual",
+          "heuristic_score": 76,
+          "hints": [
+            "industry Dental fits clinic work",
+            "title weight from Owner",
+            "warmth mutual"
+          ],
+          "keyword_band": "none",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 76. industry Dental fits clinic work; title weight from Owner; warmth mutual."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 76. Pre-check was 76. Blended score 76 maps to warm. Intent: Establishing connection. This lead is considered warm because Michael Duran is a local pre-check, indicating he is in the dental industry and has a practice in San Antonio TX. The fact that he is an owner-dentist and very active on LinkedIn suggests he is engaged in his profession and may be open to networking. The recent activity of liking posts about dental practice marketing also indicates his interest in the subject matter, making this lead a good opportunity for further connection and potential sales."
+        },
+        {
+          "step": "action",
+          "detail": "Warm, not a live hand-raise. Queue sales_nurture, tone conversational, channel linkedin."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: A question about dental practice marketing"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_nurture via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 16"
+        }
+      ],
+      "qualification": {
+        "label": "warm",
+        "score": 76,
+        "intent": "Establishing connection",
+        "rationale": "This lead is considered warm because Michael Duran is a local pre-check, indicating he is in the dental industry and has a practice in San Antonio TX. The fact that he is an owner-dentist and very active on LinkedIn suggests he is engaged in his profession and may be open to networking. The recent activity of liking posts about dental practice marketing also indicates his interest in the subject matter, making this lead a good opportunity for further connection and potential sales."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "conversational",
+        "escalate": false,
+        "queue": "sales_nurture"
+      },
+      "message": {
+        "subject": "A question about dental practice marketing",
+        "body": "Hi Michael, I noticed you're a very active owner-dentist with a single practice in San Antonio, and you've been engaging with posts about dental practice marketing on LinkedIn recently. I'm curious, have you ever thought about optimizing your online presence to attract more patients and grow your business? I'd love to discuss some strategies that might be a good fit for your practice. Would you be open to a quick call to explore further?"
+      },
+      "rationale": "This lead is considered warm because Michael Duran is a local pre-check, indicating he is in the dental industry and has a practice in San Antonio TX. The fact that he is an owner-dentist and very active on LinkedIn suggests he is engaged in his profession and may be open to networking. The recent activity of liking posts about dental practice marketing also indicates his interest in the subject matter, making this lead a good opportunity for further connection and potential sales.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 16,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L017",
+        "source": "linkedin",
+        "name": "Chloe Fournier",
+        "contact": {
+          "location": "Montreal QC",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Chloe Fournier is Practice Administrator at Fournier Med Spa (Medspa, size 1-10, Montreal QC). Headline: Practice administrator, bilingual clinic, growing fast. Recent activity: Commented asking about multilingual AI receptionists. How they got on the list: Warm intro from partner agency.",
+          "details": {
+            "job_title": "Practice Administrator",
+            "company": "Fournier Med Spa",
+            "industry": "Medspa",
+            "company_size": "1-10",
+            "headline": "Practice administrator, bilingual clinic, growing fast",
+            "recent_activity": "Commented asking about multilingual AI receptionists",
+            "connection_note": "Warm intro from partner agency"
+          }
+        },
+        "priority_signal": {
+          "warmth": "warm_intro",
+          "heuristic_score": 88,
+          "hints": [
+            "industry Medspa fits clinic work",
+            "title weight from Practice Administrator",
+            "warmth warm_intro",
+            "strong buying language in the activity"
+          ],
+          "keyword_band": "strong",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 88. industry Medspa fits clinic work; title weight from Practice Administrator; warmth warm_intro; strong buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 88. Pre-check was 88. Blended score 88 maps to hot. Intent: inquiry. The lead was scored warm due to the recent activity of Chloe Fournier commenting about multilingual AI receptionists, indicating interest in the product. The warm label is also justified by the warm intro from the partner agency, which suggests a level of familiarity and trust. The industry and job title also align with the product's target market, further supporting the warm score."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label warm did not match the blended score, so the desk kept hot. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Hot lead, so it goes to sales_hot on linkedin. There is no email on the export, so LinkedIn is the channel unless a mailbox shows up. Escalate is true because warmth is warm_intro and the score is 88."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Your Multilingual AI Receptionist Inquiry"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_hot via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 17"
+        }
+      ],
+      "qualification": {
+        "label": "hot",
+        "score": 88,
+        "intent": "inquiry",
+        "rationale": "The lead was scored warm due to the recent activity of Chloe Fournier commenting about multilingual AI receptionists, indicating interest in the product. The warm label is also justified by the warm intro from the partner agency, which suggests a level of familiarity and trust. The industry and job title also align with the product's target market, further supporting the warm score."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "direct",
+        "escalate": true,
+        "queue": "sales_hot"
+      },
+      "message": {
+        "subject": "Your Multilingual AI Receptionist Inquiry",
+        "body": "Chloe, I noticed you commented recently about multilingual AI receptionists, indicating interest in our product. As a Practice Administrator at Fournier Med Spa, I wanted to reach out to you directly. Your clinic, a bilingual and growing Medspa, may benefit from our AI-powered receptionist solution. Would you be open to a quick call to discuss how our product can help streamline your practice?"
+      },
+      "rationale": "The lead was scored warm due to the recent activity of Chloe Fournier commenting about multilingual AI receptionists, indicating interest in the product. The warm label is also justified by the warm intro from the partner agency, which suggests a level of familiarity and trust. The industry and job title also align with the product's target market, further supporting the warm score.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 17,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "lead:L018",
+        "source": "linkedin",
+        "name": "Kevin Brooks",
+        "contact": {
+          "location": "Dallas TX",
+          "has_email": false,
+          "has_phone": false
+        },
+        "context": {
+          "summary": "Kevin Brooks is Regional Manager at Brooks Urgent Care Network (Healthcare, size 201-500, Dallas TX). Headline: Regional manager overseeing 8 urgent care locations. Recent activity: Shared a post about reducing patient wait times. How they got on the list: No note, added from conference badge scan list.",
+          "details": {
+            "job_title": "Regional Manager",
+            "company": "Brooks Urgent Care Network",
+            "industry": "Healthcare",
+            "company_size": "201-500",
+            "headline": "Regional manager overseeing 8 urgent care locations",
+            "recent_activity": "Shared a post about reducing patient wait times",
+            "connection_note": "No note, added from conference badge scan list"
+          }
+        },
+        "priority_signal": {
+          "warmth": "engaged",
+          "heuristic_score": 62,
+          "hints": [
+            "industry Healthcare fits clinic work",
+            "title weight from Regional Manager",
+            "warmth engaged",
+            "weak buying language in the activity"
+          ],
+          "keyword_band": "weak",
+          "do_not_contact": false
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 62. industry Healthcare fits clinic work; title weight from Regional Manager; warmth engaged; weak buying language in the activity."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said warm / 62. Pre-check was 62. Blended score 62 maps to warm. Intent: Establishing connection. The score of 62 indicates a moderate level of engagement. Kevin Brooks' role as Regional Manager and his involvement in reducing patient wait times suggest a professional and industry-relevant interest. The lack of a note on how he was added to the list and the fact that he was scanned from a conference badge list may indicate a connection to the clinic software, but the weak buying language in his recent activity suggests that he may not be actively seeking a solution for his clinic's needs at this time. The fact that he was added from a list without a clear connection to the clinic software may also indicate a lower level of engagement compared to someone who reached out directly or showed a clear interest in the product."
+        },
+        {
+          "step": "action",
+          "detail": "Warm, not a live hand-raise. Queue sales_nurture, tone conversational, channel linkedin."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Thoughts on wait times in urgent care"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue sales_nurture via linkedin."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 18"
+        }
+      ],
+      "qualification": {
+        "label": "warm",
+        "score": 62,
+        "intent": "Establishing connection",
+        "rationale": "The score of 62 indicates a moderate level of engagement. Kevin Brooks' role as Regional Manager and his involvement in reducing patient wait times suggest a professional and industry-relevant interest. The lack of a note on how he was added to the list and the fact that he was scanned from a conference badge list may indicate a connection to the clinic software, but the weak buying language in his recent activity suggests that he may not be actively seeking a solution for his clinic's needs at this time. The fact that he was added from a list without a clear connection to the clinic software may also indicate a lower level of engagement compared to someone who reached out directly or showed a clear interest in the product."
+      },
+      "action": {
+        "channel": "linkedin",
+        "tone": "conversational",
+        "escalate": false,
+        "queue": "sales_nurture"
+      },
+      "message": {
+        "subject": "Thoughts on wait times in urgent care",
+        "body": "I came across your profile and saw that you've been sharing insights on reducing patient wait times in your urgent care network. As someone who's passionate about streamlining patient flow, I'd love to explore how AI-powered reception systems can help achieve that goal. Would you be open to a quick call to discuss how Deskline can support your practice?"
+      },
+      "rationale": "The score of 62 indicates a moderate level of engagement. Kevin Brooks' role as Regional Manager and his involvement in reducing patient wait times suggest a professional and industry-relevant interest. The lack of a note on how he was added to the list and the fact that he was scanned from a conference badge list may indicate a connection to the clinic software, but the weak buying language in his recent activity suggests that he may not be actively seeking a solution for his clinic's needs at this time. The fact that he was added from a list without a clear connection to the clinic software may also indicate a lower level of engagement compared to someone who reached out directly or showed a clear interest in the product.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 18,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:0c2a34a4-d948-4917-98b8-f44a77e459d8",
+        "source": "fhir",
+        "name": "Ardith Welch",
+        "contact": {
+          "location": "Chester, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Ardith Welch, female, born 2014, Chester, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Acute allergic reaction, Viral sinusitis (disorder). Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "female",
+            "age": 11,
+            "language": "English",
+            "active_conditions": [],
+            "condition_count": 0,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 30,
+          "hints": [
+            "0 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 0
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 30. 0 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said routine / 80. Pre-check was 30. Blended score 55 maps to soon. Intent: simple patient profile. The patient's age (2014) and birthplace (Chester, Massachusetts) suggest a young adult. The lack of active conditions (scored 0) and no appointments returned indicate a low-risk patient. The patient's language on file is English, and phone is listed as yes, which may indicate a preference for communication via phone, further supporting a routine label."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label routine did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Internal Task: Ardith Welch"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 19"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 55,
+        "intent": "simple patient profile",
+        "rationale": "The patient's age (2014) and birthplace (Chester, Massachusetts) suggest a young adult. The lack of active conditions (scored 0) and no appointments returned indicate a low-risk patient. The patient's language on file is English, and phone is listed as yes, which may indicate a preference for communication via phone, further supporting a routine label."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "Internal Task: Ardith Welch",
+        "body": "High-priority task for Ardith Welch. Urgency: medium. Next action: Book a follow-up appointment. Justification: Ardith Welch is a low-risk patient with no active conditions. Her age and birthplace suggest a young adult, and her language on file is English. With a phone preference listed, a follow-up appointment is a routine and suitable next step. The patient has not returned any appointments, indicating availability. This task requires a routine channel."
+      },
+      "rationale": "The patient's age (2014) and birthplace (Chester, Massachusetts) suggest a young adult. The lack of active conditions (scored 0) and no appointments returned indicate a low-risk patient. The patient's language on file is English, and phone is listed as yes, which may indicate a preference for communication via phone, further supporting a routine label.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 19,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:22d7a9b8-7756-4eb7-a95f-6e86e0c93761",
+        "source": "fhir",
+        "name": "Mar\u00eda Luisa Razo",
+        "contact": {
+          "location": "Lexington, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Mar\u00eda Luisa Razo, female, born 1973, Lexington, Massachusetts. Language on file: Spanish. Phone on file: yes. Active conditions: Body mass index 30+ - obesity (finding), Coronary Heart Disease. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "female",
+            "age": 53,
+            "language": "Spanish",
+            "active_conditions": [
+              "Body mass index 30+ - obesity (finding)",
+              "Coronary Heart Disease"
+            ],
+            "condition_count": 2,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 64,
+          "hints": [
+            "2 active conditions",
+            "at least one higher-acuity condition"
+          ],
+          "acuity": "high",
+          "do_not_contact": false,
+          "active_conditions": 2
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 64. 2 active conditions; at least one higher-acuity condition."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 64. Pre-check was 64. Blended score 64 maps to soon. Intent: high-risk patient. The patient has two active conditions: obesity and Coronary Heart Disease, which are considered higher-acuity conditions. This suggests that the patient may require more urgent attention. The score of 64 is based on this assessment, indicating that the patient's conditions warrant a higher level of care."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: High-Risk Patient Update: Mar\u00eda Luisa Razo"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 20"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 64,
+        "intent": "high-risk patient",
+        "rationale": "The patient has two active conditions: obesity and Coronary Heart Disease, which are considered higher-acuity conditions. This suggests that the patient may require more urgent attention. The score of 64 is based on this assessment, indicating that the patient's conditions warrant a higher level of care."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "High-Risk Patient Update: Mar\u00eda Luisa Razo",
+        "body": "This patient is classified as high-risk due to two active conditions: obesity and Coronary Heart Disease. The care coordinator should prioritize her case. The patient's score of 64 justifies this classification. No appointments have been returned. The patient's language is Spanish, and a phone number is on file. The care coordinator should expedite her care. Urgency level: High."
+      },
+      "rationale": "The patient has two active conditions: obesity and Coronary Heart Disease, which are considered higher-acuity conditions. This suggests that the patient may require more urgent attention. The score of 64 is based on this assessment, indicating that the patient's conditions warrant a higher level of care.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 20,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:2c4e4abf-b81d-4791-9046-7cdff816061f",
+        "source": "fhir",
+        "name": "Sandi Gerlach",
+        "contact": {
+          "location": "Boston, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Sandi Gerlach, female, born 1954, Boston, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Anemia (disorder). Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "female",
+            "age": 72,
+            "language": "English",
+            "active_conditions": [
+              "Anemia (disorder)"
+            ],
+            "condition_count": 1,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 36,
+          "hints": [
+            "1 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 1
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 36. 1 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 36. Pre-check was 36. Blended score 36 maps to routine. Intent: high risk condition. The patient has an active condition of Anemia, which is a disorder. This condition is considered high risk, warranting immediate attention. The low score of 36 is likely due to the fact that the local pre-check only considered the presence of active conditions, and not other factors such as the severity of the condition or the patient's overall health status."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept routine. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Routine chart. Brief internal task, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: High Risk Patient: Sandi Gerlach"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_routine via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 21"
+        }
+      ],
+      "qualification": {
+        "label": "routine",
+        "score": 36,
+        "intent": "high risk condition",
+        "rationale": "The patient has an active condition of Anemia, which is a disorder. This condition is considered high risk, warranting immediate attention. The low score of 36 is likely due to the fact that the local pre-check only considered the presence of active conditions, and not other factors such as the severity of the condition or the patient's overall health status."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "brief",
+        "escalate": false,
+        "queue": "care_routine"
+      },
+      "message": {
+        "subject": "High Risk Patient: Sandi Gerlach",
+        "body": "Urgent: Sandi Gerlach's Anemia condition requires immediate attention due to its high risk status. Her low qualification score of 36 is likely due to the pre-check only considering active conditions. No appointments have been returned. Follow up with Sandi to schedule a visit ASAP to address her Anemia. Language on file: English. Phone on file: yes."
+      },
+      "rationale": "The patient has an active condition of Anemia, which is a disorder. This condition is considered high risk, warranting immediate attention. The low score of 36 is likely due to the fact that the local pre-check only considered the presence of active conditions, and not other factors such as the severity of the condition or the patient's overall health status.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 21,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:3d6cdb4d-8387-4e3d-97ca-f01c30122329",
+        "source": "fhir",
+        "name": "Preston Cummerata",
+        "contact": {
+          "location": "Foxborough, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Preston Cummerata, male, born 2008, Foxborough, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Atopic dermatitis. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 18,
+            "language": "English",
+            "active_conditions": [
+              "Atopic dermatitis"
+            ],
+            "condition_count": 1,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 36,
+          "hints": [
+            "1 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 1
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 36. 1 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 36. Pre-check was 36. Blended score 36 maps to routine. Intent: high risk. The patient has an active condition of atopic dermatitis, which is a chronic and potentially serious skin condition. The low local pre-check score of 36, based on 1 active condition, indicates a moderate risk. Given the patient's age (2008) and the fact that no appointments have been returned, it is reasonable to consider this patient as urgent, as they may require medical attention or follow-up soon."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept routine. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Routine chart. Brief internal task, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Urgent: Preston Cummerata - Atopic Dermatitis"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_routine via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 22"
+        }
+      ],
+      "qualification": {
+        "label": "routine",
+        "score": 36,
+        "intent": "high risk",
+        "rationale": "The patient has an active condition of atopic dermatitis, which is a chronic and potentially serious skin condition. The low local pre-check score of 36, based on 1 active condition, indicates a moderate risk. Given the patient's age (2008) and the fact that no appointments have been returned, it is reasonable to consider this patient as urgent, as they may require medical attention or follow-up soon."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "brief",
+        "escalate": false,
+        "queue": "care_routine"
+      },
+      "message": {
+        "subject": "Urgent: Preston Cummerata - Atopic Dermatitis",
+        "body": "Preston Cummerata is considered urgent due to his active atopic dermatitis condition and low pre-check score of 36, indicating a moderate risk. As he is 2008 years old and has no returned appointments, he may require medical attention or follow-up soon. The patient's language is English and a phone number is on file. Schedule a visit to ensure his condition is managed."
+      },
+      "rationale": "The patient has an active condition of atopic dermatitis, which is a chronic and potentially serious skin condition. The low local pre-check score of 36, based on 1 active condition, indicates a moderate risk. Given the patient's age (2008) and the fact that no appointments have been returned, it is reasonable to consider this patient as urgent, as they may require medical attention or follow-up soon.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 22,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:3e383d93-552a-46ae-a96a-1989586244c9",
+        "source": "fhir",
+        "name": "Brady Kuhlman",
+        "contact": {
+          "location": "Quincy, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Brady Kuhlman, male, born 1970, Quincy, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Chronic sinusitis (disorder), Body mass index 30+ - obesity (finding). Appointments: 1 appointment records.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 56,
+            "language": "English",
+            "active_conditions": [
+              "Chronic sinusitis (disorder)",
+              "Body mass index 30+ - obesity (finding)"
+            ],
+            "condition_count": 2,
+            "appointment_count": 1,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 42,
+          "hints": [
+            "2 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 2
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 42. 2 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said routine / 42. Pre-check was 42. Blended score 42 maps to routine. Intent: pre-check. The patient has two active conditions, Chronic sinusitis and Body mass index 30+, but the score is 42, indicating a routine pre-check. This is because the patient's conditions are not life-threatening and do not require immediate attention. The score is based on the local pre-check system, which considers the number of active conditions, and in this case, the score is within the expected range for a routine pre-check."
+        },
+        {
+          "step": "action",
+          "detail": "Routine chart. Brief internal task, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Handoff: Brady Kuhlman"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_routine via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 23"
+        }
+      ],
+      "qualification": {
+        "label": "routine",
+        "score": 42,
+        "intent": "pre-check",
+        "rationale": "The patient has two active conditions, Chronic sinusitis and Body mass index 30+, but the score is 42, indicating a routine pre-check. This is because the patient's conditions are not life-threatening and do not require immediate attention. The score is based on the local pre-check system, which considers the number of active conditions, and in this case, the score is within the expected range for a routine pre-check."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "brief",
+        "escalate": false,
+        "queue": "care_routine"
+      },
+      "message": {
+        "subject": "Handoff: Brady Kuhlman",
+        "body": "Urgent: Routine pre-check scheduled for Brady Kuhlman due to two active conditions (Chronic sinusitis and Body mass index 30+). The score of 42 justifies a routine pre-check, as the conditions are not life-threatening. On file: language English, phone number. Active conditions: Chronic sinusitis and Body mass index 30+. Currently, one appointment is scheduled."
+      },
+      "rationale": "The patient has two active conditions, Chronic sinusitis and Body mass index 30+, but the score is 42, indicating a routine pre-check. This is because the patient's conditions are not life-threatening and do not require immediate attention. The score is based on the local pre-check system, which considers the number of active conditions, and in this case, the score is within the expected range for a routine pre-check.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 23,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:4e9ac5eb-f87d-4c8d-80d0-07d9a01c94d1",
+        "source": "fhir",
+        "name": "Israel Sanford",
+        "contact": {
+          "location": "Northbridge, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Israel Sanford, male, born 1965, Northbridge, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Polyp of colon, Laceration of forearm. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 61,
+            "language": "English",
+            "active_conditions": [],
+            "condition_count": 0,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 30,
+          "hints": [
+            "0 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 0
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 30. 0 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 80. Pre-check was 30. Blended score 55 maps to soon. Intent: high-risk conditions. The patient has two active conditions: a polyp of the colon and a laceration of the forearm. These conditions are considered high-risk and require immediate attention. The score of 80 reflects the severity of these conditions, despite the lack of appointments returned, which may indicate a need for urgent follow-up."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: High-Risk Patient: Israel Sanford"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 24"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 55,
+        "intent": "high-risk conditions",
+        "rationale": "The patient has two active conditions: a polyp of the colon and a laceration of the forearm. These conditions are considered high-risk and require immediate attention. The score of 80 reflects the severity of these conditions, despite the lack of appointments returned, which may indicate a need for urgent follow-up."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "High-Risk Patient: Israel Sanford",
+        "body": "Urgent: Israel Sanford has two active high-risk conditions: a polyp of the colon and a laceration of the forearm. The score of 80 reflects the severity of these conditions, despite the lack of returned appointments. Israel Sanford has no scheduled appointments. He is a 55-year-old male with a history of high-risk conditions. His language is English, and a phone number is on file. Immediate attention is required for these conditions. Next action: schedule an urgent appointment with the relevant specialist."
+      },
+      "rationale": "The patient has two active conditions: a polyp of the colon and a laceration of the forearm. These conditions are considered high-risk and require immediate attention. The score of 80 reflects the severity of these conditions, despite the lack of appointments returned, which may indicate a need for urgent follow-up.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 24,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:79c96478-7878-4703-9e94-b999f2bc3295",
+        "source": "fhir",
+        "name": "Tony Douglas",
+        "contact": {
+          "location": "Medford, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Tony Douglas, male, born 1972, Medford, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Hypertension, Perennial allergic rhinitis with seasonal variation. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 54,
+            "language": "English",
+            "active_conditions": [
+              "Hypertension",
+              "Perennial allergic rhinitis with seasonal variation"
+            ],
+            "condition_count": 2,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 42,
+          "hints": [
+            "2 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 2
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 42. 2 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 80. Pre-check was 42. Blended score 61 maps to soon. Intent: high risk. The patient has two active conditions: Hypertension and Perennial allergic rhinitis with seasonal variation. This suggests a potential for serious health complications, warranting urgent attention. The score of 80 is higher than the local pre-check score of 42, as it takes into account the severity of the conditions and the potential for acute exacerbation."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Urgent: Tony Douglas - High Risk"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 25"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 61,
+        "intent": "high risk",
+        "rationale": "The patient has two active conditions: Hypertension and Perennial allergic rhinitis with seasonal variation. This suggests a potential for serious health complications, warranting urgent attention. The score of 80 is higher than the local pre-check score of 42, as it takes into account the severity of the conditions and the potential for acute exacerbation."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "Urgent: Tony Douglas - High Risk",
+        "body": "Tony Douglas has a high risk score of 80, warranting urgent attention due to his two active conditions: Hypertension and Perennial allergic rhinitis with seasonal variation. His score is higher than the local pre-check score of 42, indicating potential for serious health complications. His appointment status is pending, as no appointments have been returned. Follow up with him to schedule an appointment as soon as possible to ensure timely medical attention."
+      },
+      "rationale": "The patient has two active conditions: Hypertension and Perennial allergic rhinitis with seasonal variation. This suggests a potential for serious health complications, warranting urgent attention. The score of 80 is higher than the local pre-check score of 42, as it takes into account the severity of the conditions and the potential for acute exacerbation.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 25,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:8a6f7e61-55dc-4dc3-bf12-b3531b690b05",
+        "source": "fhir",
+        "name": "Versie Botsford",
+        "contact": {
+          "location": "Ayer, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Versie Botsford, female, born 2018, Ayer, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Otitis media. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "female",
+            "age": 8,
+            "language": "English",
+            "active_conditions": [
+              "Otitis media"
+            ],
+            "condition_count": 1,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 36,
+          "hints": [
+            "1 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 1
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 36. 1 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 36. Pre-check was 36. Blended score 36 maps to routine. Intent: high risk. The patient has an active condition of Otitis media, which is a serious ear infection. The local pre-check score of 36 is based on this condition. The fact that the patient has no appointments returned also suggests a high risk, as they may require urgent medical attention. The patient's age and location also contribute to the urgency of the situation."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept routine. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Routine chart. Brief internal task, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: High Risk Patient Handoff"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_routine via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 26"
+        }
+      ],
+      "qualification": {
+        "label": "routine",
+        "score": 36,
+        "intent": "high risk",
+        "rationale": "The patient has an active condition of Otitis media, which is a serious ear infection. The local pre-check score of 36 is based on this condition. The fact that the patient has no appointments returned also suggests a high risk, as they may require urgent medical attention. The patient's age and location also contribute to the urgency of the situation."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "brief",
+        "escalate": false,
+        "queue": "care_routine"
+      },
+      "message": {
+        "subject": "High Risk Patient Handoff",
+        "body": "Urgent: Patient Versie Botsford has an active Otitis media condition with a local pre-check score of 36. No appointments have been returned, indicating a high risk of needing urgent medical attention. Her age and location also contribute to the urgency. She is a routine qualification patient. Record: female, born 2018, Ayer, Massachusetts, English, phone on file. Next action: Schedule a visit as soon as possible. Follow up with the patient if they go quiet after hours."
+      },
+      "rationale": "The patient has an active condition of Otitis media, which is a serious ear infection. The local pre-check score of 36 is based on this condition. The fact that the patient has no appointments returned also suggests a high risk, as they may require urgent medical attention. The patient's age and location also contribute to the urgency of the situation.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 26,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:963dabe4-84e7-4751-b432-e34bdbdbde05",
+        "source": "fhir",
+        "name": "Marcos Delagarza",
+        "contact": {
+          "location": "Boston, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Marcos Delagarza, male, born 1992, Boston, Massachusetts. Language on file: Spanish. Phone on file: yes. Active conditions: Perennial allergic rhinitis with seasonal variation, Anemia (disorder), Prediabetes. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 34,
+            "language": "Spanish",
+            "active_conditions": [
+              "Perennial allergic rhinitis with seasonal variation",
+              "Anemia (disorder)",
+              "Prediabetes"
+            ],
+            "condition_count": 3,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 70,
+          "hints": [
+            "3 active conditions",
+            "at least one higher-acuity condition"
+          ],
+          "acuity": "high",
+          "do_not_contact": false,
+          "active_conditions": 3
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 70. 3 active conditions; at least one higher-acuity condition."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said routine / 70. Pre-check was 70. Blended score 70 maps to urgent. Intent: pre-check. The patient has 3 active conditions, including Perennial allergic rhinitis with seasonal variation, Anemia (disorder), and Prediabetes. However, none of these conditions are higher-acuity. The pre-check score of 70 is based on the presence of these active conditions, but the lack of higher-acuity conditions and the absence of appointments returned suggests a relatively stable and manageable condition set. Therefore, the label 'routine' is chosen to reflect the patient's overall condition status."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label routine did not match the blended score, so the desk kept urgent. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Urgent chart. Escalate to care_urgent. Channel is phone because a coordinator should call when a number exists, otherwise it stays an internal task. The note is for staff, not a message to the patient."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Urgent - Patient Marcos Delagarza: Routine"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_urgent via phone."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 27"
+        }
+      ],
+      "qualification": {
+        "label": "urgent",
+        "score": 70,
+        "intent": "pre-check",
+        "rationale": "The patient has 3 active conditions, including Perennial allergic rhinitis with seasonal variation, Anemia (disorder), and Prediabetes. However, none of these conditions are higher-acuity. The pre-check score of 70 is based on the presence of these active conditions, but the lack of higher-acuity conditions and the absence of appointments returned suggests a relatively stable and manageable condition set. Therefore, the label 'routine' is chosen to reflect the patient's overall condition status."
+      },
+      "action": {
+        "channel": "phone",
+        "tone": "clear",
+        "escalate": true,
+        "queue": "care_urgent"
+      },
+      "message": {
+        "subject": "Urgent - Patient Marcos Delagarza: Routine",
+        "body": "A patient with 3 active conditions (Perennial allergic rhinitis with seasonal variation, Anemia, and Prediabetes) has no returned appointments. The pre-check score is 70 due to the presence of these conditions. Given the lack of higher-acuity conditions, a routine appointment is planned. The patient's language is Spanish, and a phone call is the planned channel."
+      },
+      "rationale": "The patient has 3 active conditions, including Perennial allergic rhinitis with seasonal variation, Anemia (disorder), and Prediabetes. However, none of these conditions are higher-acuity. The pre-check score of 70 is based on the presence of these active conditions, but the lack of higher-acuity conditions and the absence of appointments returned suggests a relatively stable and manageable condition set. Therefore, the label 'routine' is chosen to reflect the patient's overall condition status.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 27,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:bc76f6c4-48cc-45b2-98f1-5792e72decdc",
+        "source": "fhir",
+        "name": "Franklyn Klein",
+        "contact": {
+          "location": "Franklin Town, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Franklyn Klein, male, born 1962, Franklin Town, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Perennial allergic rhinitis, Body mass index 30+ - obesity (finding). Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 64,
+            "language": "English",
+            "active_conditions": [
+              "Perennial allergic rhinitis",
+              "Body mass index 30+ - obesity (finding)"
+            ],
+            "condition_count": 2,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 42,
+          "hints": [
+            "2 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 2
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 42. 2 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said routine / 42. Pre-check was 42. Blended score 42 maps to routine. Intent: pre-check. The patient has two active conditions, Perennial allergic rhinitis and Body mass index 30+ - obesity (finding), which may require some level of attention. However, the lack of appointments returned and the fact that the local pre-check scored the patient 42 based on these conditions suggests that the patient's overall health status is not critical. The patient's age (born 1962) and location (Franklin Town, Massachusetts) do not provide additional context to justify a higher score. Therefore, a routine label is assigned, indicating that the patient's conditions are manageable and do not require immediate attention."
+        },
+        {
+          "step": "action",
+          "detail": "Routine chart. Brief internal task, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Internal Task: Franklyn Klein"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_routine via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 28"
+        }
+      ],
+      "qualification": {
+        "label": "routine",
+        "score": 42,
+        "intent": "pre-check",
+        "rationale": "The patient has two active conditions, Perennial allergic rhinitis and Body mass index 30+ - obesity (finding), which may require some level of attention. However, the lack of appointments returned and the fact that the local pre-check scored the patient 42 based on these conditions suggests that the patient's overall health status is not critical. The patient's age (born 1962) and location (Franklin Town, Massachusetts) do not provide additional context to justify a higher score. Therefore, a routine label is assigned, indicating that the patient's conditions are manageable and do not require immediate attention."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "brief",
+        "escalate": false,
+        "queue": "care_routine"
+      },
+      "message": {
+        "subject": "Internal Task: Franklyn Klein",
+        "body": "Urgency: Routine. Next action: Review patient file and schedule a follow-up appointment in 6-8 weeks. The patient's conditions are manageable and do not require immediate attention. The low score is justified by the lack of appointments returned and the patient's age and location not providing additional context. Patient's active conditions include Perennial allergic rhinitis and Body mass index 30+ - obesity (finding). The patient's language is English and a phone number is on file."
+      },
+      "rationale": "The patient has two active conditions, Perennial allergic rhinitis and Body mass index 30+ - obesity (finding), which may require some level of attention. However, the lack of appointments returned and the fact that the local pre-check scored the patient 42 based on these conditions suggests that the patient's overall health status is not critical. The patient's age (born 1962) and location (Franklin Town, Massachusetts) do not provide additional context to justify a higher score. Therefore, a routine label is assigned, indicating that the patient's conditions are manageable and do not require immediate attention.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 28,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:c3d9f92d-0956-4f12-9e90-6bed9db5f27d",
+        "source": "fhir",
+        "name": "Gerard Thiel",
+        "contact": {
+          "location": "New Bedford, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Gerard Thiel, male, born 1954, New Bedford, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Body mass index 30+ - obesity (finding), Chronic sinusitis (disorder). Appointments: 1 appointment records.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 72,
+            "language": "English",
+            "active_conditions": [
+              "Body mass index 30+ - obesity (finding)",
+              "Chronic sinusitis (disorder)"
+            ],
+            "condition_count": 2,
+            "appointment_count": 1,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 42,
+          "hints": [
+            "2 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 2
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 42. 2 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said routine / 42. Pre-check was 42. Blended score 42 maps to routine. Intent: pre-check. The patient has two active conditions, but they are chronic and not immediately life-threatening. The pre-check score is based on the presence of these conditions, but the score of 42 suggests that the pre-check did not consider the patient's overall health status. The fact that the patient has a phone on file and language on file also suggests that the pre-check was thorough, but the score does not reflect the patient's overall health."
+        },
+        {
+          "step": "action",
+          "detail": "Routine chart. Brief internal task, no escalation."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Gerard Thiel: Review of Pre-Check Score"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_routine via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 29"
+        }
+      ],
+      "qualification": {
+        "label": "routine",
+        "score": 42,
+        "intent": "pre-check",
+        "rationale": "The patient has two active conditions, but they are chronic and not immediately life-threatening. The pre-check score is based on the presence of these conditions, but the score of 42 suggests that the pre-check did not consider the patient's overall health status. The fact that the patient has a phone on file and language on file also suggests that the pre-check was thorough, but the score does not reflect the patient's overall health."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "brief",
+        "escalate": false,
+        "queue": "care_routine"
+      },
+      "message": {
+        "subject": "Gerard Thiel: Review of Pre-Check Score",
+        "body": "Urgent: Review of pre-check score for Gerard Thiel due to discrepancy between score and overall health status. Score of 42 indicates pre-check did not consider chronic conditions, despite language on file and phone number on file. Patient has obesity and chronic sinusitis, but score does not reflect overall health. Review and consider adjustment to pre-check score."
+      },
+      "rationale": "The patient has two active conditions, but they are chronic and not immediately life-threatening. The pre-check score is based on the presence of these conditions, but the score of 42 suggests that the pre-check did not consider the patient's overall health status. The fact that the patient has a phone on file and language on file also suggests that the pre-check was thorough, but the score does not reflect the patient's overall health.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 29,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:c79b748f-a792-4aea-bca5-c7c9c5b188cd",
+        "source": "fhir",
+        "name": "Asa Hermiston",
+        "contact": {
+          "location": "Peabody, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Asa Hermiston, male, born 1971, Peabody, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Chronic sinusitis (disorder), Body mass index 30+ - obesity (finding), Atopic dermatitis, Osteoarthritis of hip. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 55,
+            "language": "English",
+            "active_conditions": [
+              "Chronic sinusitis (disorder)",
+              "Body mass index 30+ - obesity (finding)",
+              "Atopic dermatitis",
+              "Osteoarthritis of hip"
+            ],
+            "condition_count": 4,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 54,
+          "hints": [
+            "4 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 4
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 54. 4 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 54. Pre-check was 54. Blended score 54 maps to soon. Intent: high-risk conditions. The patient has 4 active conditions, including Chronic sinusitis, Body mass index 30+, and Osteoarthritis of hip, which are considered high-risk. This score is based on the local pre-check, which takes into account the presence of these conditions. The patient's age and location also contribute to the urgency of the situation."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: High-Risk Patient Asa Hermiston: Urgent Follow-up Needed"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 30"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 54,
+        "intent": "high-risk conditions",
+        "rationale": "The patient has 4 active conditions, including Chronic sinusitis, Body mass index 30+, and Osteoarthritis of hip, which are considered high-risk. This score is based on the local pre-check, which takes into account the presence of these conditions. The patient's age and location also contribute to the urgency of the situation."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "High-Risk Patient Asa Hermiston: Urgent Follow-up Needed",
+        "body": "Asa Hermiston's high-risk conditions, including Chronic sinusitis, obesity, and Osteoarthritis of hip, warrant immediate attention. With 4 active conditions, his local pre-check score is elevated, indicating a high level of risk. As his care coordinator, please book an appointment as soon as possible and follow up with him to ensure his needs are met. His language is English, and a phone number is on file. No appointments have been returned, and his appointment status is currently unknown."
+      },
+      "rationale": "The patient has 4 active conditions, including Chronic sinusitis, Body mass index 30+, and Osteoarthritis of hip, which are considered high-risk. This score is based on the local pre-check, which takes into account the presence of these conditions. The patient's age and location also contribute to the urgency of the situation.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 30,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:c931bf62-c468-49f1-9ef7-93ccbc949a87",
+        "source": "fhir",
+        "name": "Jermaine Breitenberg",
+        "contact": {
+          "location": "New Bedford, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Jermaine Breitenberg, male, born 1974, New Bedford, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Hypertension, Chronic sinusitis (disorder), Body mass index 30+ - obesity (finding). Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 52,
+            "language": "English",
+            "active_conditions": [
+              "Hypertension",
+              "Chronic sinusitis (disorder)",
+              "Body mass index 30+ - obesity (finding)"
+            ],
+            "condition_count": 3,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 48,
+          "hints": [
+            "3 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 3
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 48. 3 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said routine / 48. Pre-check was 48. Blended score 48 maps to soon. Intent: pre-check. The patient's age, sex, and birthdate do not provide any additional information that would alter the pre-check score. The language on file and phone status are also not relevant to the pre-check score. The only relevant information is the number and type of active conditions, which is used to calculate the score."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label routine did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Internal Task: Jermaine Breitenberg - Pre-Check Urgency"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 31"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 48,
+        "intent": "pre-check",
+        "rationale": "The patient's age, sex, and birthdate do not provide any additional information that would alter the pre-check score. The language on file and phone status are also not relevant to the pre-check score. The only relevant information is the number and type of active conditions, which is used to calculate the score."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "Internal Task: Jermaine Breitenberg - Pre-Check Urgency",
+        "body": "Urgency: High. Next action: Schedule a pre-check appointment for Jermaine Breitenberg. The pre-check score is 48, indicating a high risk. With two active conditions (hypertension and chronic sinusitis) and a body mass index of 30+, the risk factors are significant. No appointments have been returned, and the patient's age and sex do not provide any additional context. A pre-check appointment is necessary to assess and address these health concerns."
+      },
+      "rationale": "The patient's age, sex, and birthdate do not provide any additional information that would alter the pre-check score. The language on file and phone status are also not relevant to the pre-check score. The only relevant information is the number and type of active conditions, which is used to calculate the score.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 31,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:d4dd52b4-152b-4748-9abd-6cc91a9e2be1",
+        "source": "fhir",
+        "name": "Robby Becker",
+        "contact": {
+          "location": "Rockland, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Robby Becker, male, born 1974, Rockland, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Body mass index 30+ - obesity (finding), Prediabetes. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "male",
+            "age": 52,
+            "language": "English",
+            "active_conditions": [
+              "Body mass index 30+ - obesity (finding)",
+              "Prediabetes"
+            ],
+            "condition_count": 2,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 64,
+          "hints": [
+            "2 active conditions",
+            "at least one higher-acuity condition"
+          ],
+          "acuity": "high",
+          "do_not_contact": false,
+          "active_conditions": 2
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 64. 2 active conditions; at least one higher-acuity condition."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 64. Pre-check was 64. Blended score 64 maps to soon. Intent: high-risk patient. The patient has two active conditions: obesity and prediabetes, which are considered higher-acuity conditions. This score of 64 is based on the local pre-check's assessment of these conditions, indicating a higher risk for the patient's health. The patient's phone is on file, but no appointments have been returned, suggesting a potential need for urgent attention or follow-up."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: High-Risk Patient Follow-up"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 32"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 64,
+        "intent": "high-risk patient",
+        "rationale": "The patient has two active conditions: obesity and prediabetes, which are considered higher-acuity conditions. This score of 64 is based on the local pre-check's assessment of these conditions, indicating a higher risk for the patient's health. The patient's phone is on file, but no appointments have been returned, suggesting a potential need for urgent attention or follow-up."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "High-Risk Patient Follow-up",
+        "body": "Urgent: The patient's high-risk score of 64 due to obesity and prediabetes requires immediate attention. The patient's phone is on file, but no appointments have been returned. Consider reaching out to the patient via phone to schedule an appointment as soon as possible. This is justified by the patient's high-acuity conditions, which warrant urgent follow-up to prevent potential complications."
+      },
+      "rationale": "The patient has two active conditions: obesity and prediabetes, which are considered higher-acuity conditions. This score of 64 is based on the local pre-check's assessment of these conditions, indicating a higher risk for the patient's health. The patient's phone is on file, but no appointments have been returned, suggesting a potential need for urgent attention or follow-up.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 32,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:d6e95d44-d6b2-4963-80b0-079f8a3821c2",
+        "source": "fhir",
+        "name": "Earnestine Tillman",
+        "contact": {
+          "location": "Boston, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Earnestine Tillman, female, born 2013, Boston, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Acute viral pharyngitis (disorder), Otitis media, Whiplash injury to neck. Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "female",
+            "age": 13,
+            "language": "English",
+            "active_conditions": [],
+            "condition_count": 0,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 30,
+          "hints": [
+            "0 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 0
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 30. 0 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 80. Pre-check was 30. Blended score 55 maps to soon. Intent: high-risk patient. Earnestine Tillman has multiple active conditions, including Acute viral pharyngitis, Otitis media, and Whiplash injury to neck, which indicates a high risk for complications. The presence of these conditions warrants immediate attention. The score of 80 is based on the fact that Earnestine has 3 active conditions, which is a significant number, and the fact that she has no appointments returned, which suggests a potential need for urgent care."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: Urgent Care Required for Earnestine Tillman"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 33"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 55,
+        "intent": "high-risk patient",
+        "rationale": "Earnestine Tillman has multiple active conditions, including Acute viral pharyngitis, Otitis media, and Whiplash injury to neck, which indicates a high risk for complications. The presence of these conditions warrants immediate attention. The score of 80 is based on the fact that Earnestine has 3 active conditions, which is a significant number, and the fact that she has no appointments returned, which suggests a potential need for urgent care."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "Urgent Care Required for Earnestine Tillman",
+        "body": "Earnestine Tillman has multiple active conditions, including Acute viral pharyngitis, Otitis media, and Whiplash injury to neck, indicating a high risk for complications. Her score is 80 due to the significant number of active conditions and lack of returned appointments. Review her medical history and schedule an urgent appointment as soon as possible. The record shows she is a 55-year-old female, born in 2013, with English as her primary language, and has a phone on file. Her active conditions include Acute viral pharyngitis, Otitis media, and Whiplash injury to neck, with no appointments scheduled."
+      },
+      "rationale": "Earnestine Tillman has multiple active conditions, including Acute viral pharyngitis, Otitis media, and Whiplash injury to neck, which indicates a high risk for complications. The presence of these conditions warrants immediate attention. The score of 80 is based on the fact that Earnestine has 3 active conditions, which is a significant number, and the fact that she has no appointments returned, which suggests a potential need for urgent care.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 33,
+        "duplicate": false
+      }
+    },
+    {
+      "input": {
+        "id": "patient:f03992c7-caa3-4534-9776-8e83259bb98e",
+        "source": "fhir",
+        "name": "Suzan Sanford",
+        "contact": {
+          "location": "Newton, Massachusetts",
+          "has_email": false,
+          "has_phone": true
+        },
+        "context": {
+          "summary": "Suzan Sanford, female, born 1964, Newton, Massachusetts. Language on file: English. Phone on file: yes. Active conditions: Miscarriage in first trimester, Chronic intractable migraine without aura, Body mass index 30+ - obesity (finding). Appointments: no appointments returned.",
+          "details": {
+            "role_line": "patient",
+            "gender": "female",
+            "age": 62,
+            "language": "English",
+            "active_conditions": [
+              "Miscarriage in first trimester",
+              "Chronic intractable migraine without aura",
+              "Body mass index 30+ - obesity (finding)"
+            ],
+            "condition_count": 3,
+            "appointment_count": 0,
+            "has_phone": true,
+            "deceased": false
+          }
+        },
+        "priority_signal": {
+          "heuristic_score": 48,
+          "hints": [
+            "3 active conditions"
+          ],
+          "acuity": "standard",
+          "do_not_contact": false,
+          "active_conditions": 3
+        }
+      },
+      "reasoning": [
+        {
+          "step": "signals",
+          "detail": "Pre-check score 48. 3 active conditions."
+        },
+        {
+          "step": "qualify",
+          "detail": "Model said urgent / 80. Pre-check was 48. Blended score 64 maps to soon. Intent: high-risk patient. The patient has two active conditions: Miscarriage in first trimester and Chronic intractable migraine without aura. These conditions are considered high-risk and require immediate attention. The patient's phone is on file, indicating they may be experiencing a medical emergency. The score of 80 reflects the severity of these conditions and the potential for urgent care."
+        },
+        {
+          "step": "adjust",
+          "detail": "Model label urgent did not match the blended score, so the desk kept soon. The written rationale is still the model's."
+        },
+        {
+          "step": "action",
+          "detail": "Worth a follow-up, not an urgent page. care_followup, internal task."
+        },
+        {
+          "step": "draft",
+          "detail": "Draft passed review. Subject: High-Risk Patient: Suzan Sanford"
+        },
+        {
+          "step": "ready",
+          "detail": "Handing off to the CRM on queue care_followup via internal_task."
+        },
+        {
+          "step": "deliver",
+          "detail": "CRM accepted it as id 34"
+        }
+      ],
+      "qualification": {
+        "label": "soon",
+        "score": 64,
+        "intent": "high-risk patient",
+        "rationale": "The patient has two active conditions: Miscarriage in first trimester and Chronic intractable migraine without aura. These conditions are considered high-risk and require immediate attention. The patient's phone is on file, indicating they may be experiencing a medical emergency. The score of 80 reflects the severity of these conditions and the potential for urgent care."
+      },
+      "action": {
+        "channel": "internal_task",
+        "tone": "practical",
+        "escalate": false,
+        "queue": "care_followup"
+      },
+      "message": {
+        "subject": "High-Risk Patient: Suzan Sanford",
+        "body": "Urgent: Suzan Sanford, a 64-year-old high-risk patient, has two active conditions: Miscarriage in first trimester and Chronic intractable migraine without aura. Her phone is on file, indicating a potential medical emergency. The severity score is 80, justifying immediate attention. No appointments have been returned. Follow up with Suzan as soon as possible to assess her condition and schedule an urgent visit if necessary."
+      },
+      "rationale": "The patient has two active conditions: Miscarriage in first trimester and Chronic intractable migraine without aura. These conditions are considered high-risk and require immediate attention. The patient's phone is on file, indicating they may be experiencing a medical emergency. The score of 80 reflects the severity of these conditions and the potential for urgent care.",
+      "crm": {
+        "accepted": true,
+        "status_code": 200,
+        "crm_id": 34,
+        "duplicate": false
+      }
+    }
+  ]
+}

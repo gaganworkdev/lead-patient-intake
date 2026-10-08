@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intake desk</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand">
+        <span class="mark">In</span>
+        <div>
+          <strong>Intake</strong>
+          <em>leads and charts</em>
+        </div>
+      </div>
+      <nav>
+        <button type="button" data-view="overview" class="active">Overview</button>
+        <button type="button" data-view="records">Records</button>
+        <button type="button" data-view="crm">CRM inbox</button>
+        <button type="button" data-view="failures">Checks</button>
+      </nav>
+      <p class="aside-note">LinkedIn export is the CSV. Patients come from the public SMART sandbox. Nothing here is real PHI.</p>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow" id="eyebrow">Desk</p>
+          <h1 id="heading">Overview</h1>
+        </div>
+        <div class="header-actions">
+          <span id="pill" class="pill">Idle</span>
+          <button type="button" id="run-btn">Run pipeline</button>
+        </div>
+      </header>
+      <div id="progress" class="progress hidden"><span></span></div>
+      <p id="note" class="note"></p>
+      <div id="view"></div>
+    </main>
+  </div>
+  <script src="/static/main.js"></script>
+</body>
+</html>
